@@ -68,6 +68,29 @@ $$
 \right.
 $$
 
-Dabei kann allerdings
-vergessen gehen, dass diese Einfachheit einen Preis in der Form eines
-hohen Speicherbedarfs hat.
+Dabei kann allerdings vergessen gehen, dass diese Einfachheit einen
+Preis in der Form eines hohen Speicherbedarfs hat.
+
+## Aufgabe
+
+Implementieren Sie die Gausssche Summenformel einmal nach ihrer Formel
+
+$$
+\sum_{k=1}^{n} k = \frac{n(n+1)}{2}
+$$
+
+und einmal nach ihrer rekursiven Definition
+
+$$
+\sum_{k=1}^{n}k=
+\left\{
+    \begin{array}{ll}
+        1,&n=1\\
+        n+\sum_{k=1}^{n-1}k,&\forall n > 1
+    \end{array}
+\right.
+$$
+
+Zeigen Sie dabei mit `print()` Statements an geeigneter Stelle, weshalb
+die rekursive Lösung mehr Speicherplatz braucht als die Implementation
+der direkten Berechnung.
