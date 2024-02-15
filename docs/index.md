@@ -27,20 +27,22 @@ Trotzdem ist die Rekursion eine nützliche Technik die man kennen sollte
 \- nicht zu Letzt, um über Strukturen mit unvorhersehbaren Formen und
 Tiefen zu iterieren[@lutzLearningPython2013, p. 555].
 
-Aus diesem Grund lohnt es sich auch, sich mit häufigen Fehlvorstellungen
-im Zusammenhang mit der rekursiven Implementierung von Funktionen
-auseinanderzusetzen.  
-Eine häufige Fehlvorstellung besteht darin, dass eine rekursiv
-implementierte Funktion aufgrund ihrer Kürze eine effiziente Lösung
-darstelle. 
+Weil rekursiv implementierte Funktionen in der Praxis nicht so häufig
+sind und trotzdem für wesentliche Aufgaben ein nützliches Hilfsmittel
+darstellen, lohnt es sich, sich mit Fehlvorstellungen im Zusammenhang
+mit der rekursiven Implementierung von Funktionen auseinanderzusetzen.  
 
-Diese Fehlvorstellung soll anhand der Gaussschen Summenformel (kleiner
-Gauss) illustriert werden. Die Gausssche Summenformel dient zur addition
-der ersten n aufeinanderfolgenden natürlichen Zahlen:
+## Die Gausssche Summenformel als Anwendungsfall für die Entstehung von Fehlvorstellungen
+
+Eine wesentliche Fehlvorstellung soll anhand der Gaussschen Summenformel
+(kleiner Gauss) illustriert werden. Die Gausssche Summenformel dient zur
+addition der ersten n aufeinanderfolgenden natürlichen Zahlen:
 
 $$
 1+2+3+4+\dots+n = \sum_{k=1}^{n} k = \frac{n(n+1)}{2}=\frac{n^2+n}{2}
 $$
+
+### Fachdidaktische Perspektive
 
 Im Mathematikunterricht wird die Gausssche Summenformel oft dazu
 verwendet, den Beweis durch vollständige Induktion zu üben.
@@ -48,3 +50,10 @@ Induktionsbeweise haben eine grosse Ähnlichkeit zu
 Rekursion[@leeDataStructuresAlgorithms2024, p. 74]. Diese Ähnlichkeit
 kann einem dazu verleiten, eine rekursive Implementation für besonders
 Effizient zu halten.
+
+### Fachliche Perspektive
+
+Wenn rekursive Definitionen mathematischer Phänomene vorliegen, sind
+diese sehr einfach als Funktion zu implementieren. Dabei kann allerdings
+vergessen gehen, dass diese Einfachheit einen Preis in der Form eines
+hohen Speicherbedarfs hat.
