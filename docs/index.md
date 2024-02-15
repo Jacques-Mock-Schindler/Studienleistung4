@@ -54,6 +54,20 @@ Effizient zu halten.
 ### Fachliche Perspektive
 
 Wenn rekursive Definitionen mathematischer Phänomene vorliegen, sind
-diese sehr einfach als Funktion zu implementieren. Dabei kann allerdings
+diese sehr einfach als Funktion zu implementieren. Im Falle der
+Gaussschen Summenformel sieht die rekursive Definition folgendermassen
+aus[@indenPythonChallenges1002022, p. 74]: 
+
+$$
+\sum_{k=1}^{n}k=
+\left\{
+    \begin{array}{ll}
+        1,&n=1\\
+        n+\sum_{k=1}^{n-1}k,&\forall n > 1
+    \end{array}
+\right.
+$$
+
+Dabei kann allerdings
 vergessen gehen, dass diese Einfachheit einen Preis in der Form eines
 hohen Speicherbedarfs hat.
