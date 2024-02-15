@@ -12,6 +12,8 @@
 !*.png
 !*.svg
 !*.drawio
+!*.bib
+!*.csl
 !docs/_layouts/default.html
 # unabhängig davon, wo sie sich befinden
 !*/
