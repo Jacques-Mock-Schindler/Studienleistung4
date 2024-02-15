@@ -17,7 +17,19 @@ bibliography: ../data/Studienleistung4.bib       # Aus Zotero exportiertes Daten
 csl: ../data/chicago-fullnote-bibliography-short-title-subsequent.csl       # Darstellung der bibliographischen Angaben
 ---
 
-
 # Eine Fehlvorstellung zur Rekursion
 
-Rekursion ist
+Rekursion ist eine fortgeschrittene Programmiertechnik. Python stellt
+verhältnismässig einfache Schleifenkonstruktionen zur Verfügung. Aus
+diesem Grund sind Implementationen unter Verwendung von Rekursionen in
+Python relativ selten.  
+Trotzdem ist die Rekursion eine nützliche Technik die man kennen sollte
+\- nicht zu Letzt, um über Strukturen mit unvorhersehbaren Formen und
+Tiefen zu iterieren[@lutzLearningPython2013, Seite 555].
+
+Aus diesem Grund lohnt es sich auch, sich mit häufigen Fehlvorstellungen
+im Zusammenhang mit der rekursiven Implementierung von Funktionen
+auseinanderzusetzen.  
+Eine häufige Fehlvorstellung besteht darin, dass eine rekursiv
+implementierte Funktion aufgrund ihrer Kürze eine effiziente Lösung
+darstelle. 
