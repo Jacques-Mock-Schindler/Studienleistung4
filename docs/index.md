@@ -41,3 +41,10 @@ der ersten n aufeinanderfolgenden natürlichen Zahlen:
 $$
 1+2+3+4+\dots+n = \sum_{k=1}^{n} k = \frac{n(n+1)}{2}=\frac{n^2+n}{2}
 $$
+
+Im Mathematikunterricht wird die Gausssche Summenformel oft dazu
+verwendet, den Beweis durch vollständige Induktion zu üben.
+Induktionsbeweise haben eine grosse Ähnlichkeit zu
+Rekursion[@leeDataStructuresAlgorithms2024, p. 74]. Diese Ähnlichkeit
+kann einem dazu verleiten, eine rekursive Implementation für besonders
+Effizient zu halten.
