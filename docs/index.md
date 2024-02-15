@@ -25,7 +25,7 @@ diesem Grund sind Implementationen unter Verwendung von Rekursionen in
 Python relativ selten.  
 Trotzdem ist die Rekursion eine nützliche Technik die man kennen sollte
 \- nicht zu Letzt, um über Strukturen mit unvorhersehbaren Formen und
-Tiefen zu iterieren[@lutzLearningPython2013, Seite 555].
+Tiefen zu iterieren[@lutzLearningPython2013, p. 555].
 
 Aus diesem Grund lohnt es sich auch, sich mit häufigen Fehlvorstellungen
 im Zusammenhang mit der rekursiven Implementierung von Funktionen
