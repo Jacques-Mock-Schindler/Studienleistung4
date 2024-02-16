@@ -110,7 +110,7 @@ Musterlösung wird hier noch in Textform zur Verfügung gestellt.
    implementiert.  
 
    ```Python
-   def gaus_rec(n : int) -> int:
+   def gauss_rec(n : int) -> int:
        if n == 1:    # Basisfall
            return 1 
 
@@ -122,7 +122,7 @@ Musterlösung wird hier noch in Textform zur Verfügung gestellt.
    eingefügt. 
 
    ```Python
-   def gaus_rec(n : int) -> int:
+   def gauss_rec(n : int) -> int:
        if n == 1:    # Basisfall
            print(f'Der aktuelle Wert von n ist {n}.', end=' ')
            print('Basisfall erreicht!')           
@@ -141,7 +141,7 @@ Musterlösung wird hier noch in Textform zur Verfügung gestellt.
    vor und nach dem Rekursionsaufruf zu platzieren.
 
    ```Python
-   def gaus_rec(n : int) -> int:
+   def gauss_rec(n : int) -> int:
        if n == 1:    # Basisfall
            print(f'Der aktuelle Wert von n ist {n}.', end=' ')
            print('Basisfall erreicht!') 
