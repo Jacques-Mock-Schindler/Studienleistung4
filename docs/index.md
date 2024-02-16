@@ -101,5 +101,21 @@ Summenformel rekursiv und in Teilaufgabe b) direkt implementiert werden.
 In beiden Teilaufgaben soll der *call stack* durch den Aufruf
 entsprechender print() Funktionen sichtbar gemacht werden.
 
+Die Aufgabenstellung wird als Jupyter Notebook abgegeben. Das gleiche
+gilt für eine ausführbare Musterlösung. Der ausführliche Kommentar zur
+Musterlösung wird hier noch in Textform zur Verfügung gestellt.
+
+1. Die rekursive Variante der Gaussschen Summenformel wird in
+   einem ersten Schritt noch ohne die verlangten print() Funktionen
+   implementiert.  
+
+   ```Python
+   def gaus_rec(n : int) -> int:
+       if n == 1:    # Basisfall
+           return 1 
+       else:         # Rekursionsfall
+           return n + gaus_rec(n - 1) 
+   ```
+
 ## Literatur
 
