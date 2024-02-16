@@ -6,6 +6,8 @@ author: Jacques Mock Schindler
 date: 15. Februar 2024
 institute: Universität Fribourg
 # Einstellungen für die Erstellung eines PDF
+header-includes:
+    - \usepackage{amsmath}
 output:
   pdf_document:
     latex_engine: xelatex
