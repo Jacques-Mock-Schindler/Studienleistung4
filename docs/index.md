@@ -117,5 +117,19 @@ Musterlösung wird hier noch in Textform zur Verfügung gestellt.
            return n + gaus_rec(n - 1) 
    ```
 
+2. In einem zweiten Schritt werden die print() Funktionen im Basisfall
+   eingefügt. 
+
+   ```Python
+   def gaus_rec(n : int) -> int:
+       if n == 1:    # Basisfall
+           print(f'Der aktuelle Wert von n ist {n}.', end=' ')
+           print('Basisfall erreicht!')           
+           return 1 
+           
+       else:         # Rekursionsfall
+           return n + gaus_rec(n - 1) 
+   ```
+
 ## Literatur
 
