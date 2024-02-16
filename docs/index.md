@@ -19,20 +19,21 @@ bibliography: ../data/Studienleistung4.bib       # Aus Zotero exportiertes Daten
 csl: ../data/chicago-fullnote-bibliography-short-title-subsequent.csl       # Darstellung der bibliographischen Angaben
 ---
 
-# Eine Fehlvorstellung zur Rekursion
+# Ausgangslage
 
-Rekursion ist eine fortgeschrittene Programmiertechnik. Python stellt
-verhältnismässig einfache Schleifenkonstruktionen zur Verfügung. Aus
-diesem Grund sind Implementationen unter Verwendung von Rekursionen in
+Rekursion ist eine fortgeschrittene Programmiertechnik. Weil Python 
+verhältnismässig einfache Schleifenkonstruktionen zur Verfügung stellt,
+sind Implementationen unter Verwendung von Rekursionen in
 Python relativ selten.  
-Trotzdem ist die Rekursion eine nützliche Technik die man kennen sollte
+Trotzdem ist die Rekursion eine nützliche Technik, die man kennen sollte
 \- nicht zu Letzt, um über Strukturen mit unvorhersehbaren Formen und
 Tiefen zu iterieren[@lutzLearningPython2013, p. 555].
 
 Weil rekursiv implementierte Funktionen in der Praxis nicht so häufig
-sind und trotzdem für wesentliche Aufgaben ein nützliches Hilfsmittel
-darstellen, lohnt es sich, sich mit Fehlvorstellungen im Zusammenhang
-mit der rekursiven Implementierung von Funktionen auseinanderzusetzen.  
+sind, und trotzdem für wesentliche Aufgaben ein nützliches Hilfsmittel
+darstellen, lohnt es sich, Fehlvorstellungen im Zusammenhang
+mit der rekursiven Implementierung von Funktionen aufzudecken und
+richtig zu stellen.  
 
 ## Die Gausssche Summenformel als Anwendungsfall für die Entstehung von Fehlvorstellungen
 
@@ -44,14 +45,24 @@ $$
 1+2+3+4+\dots+n = \sum_{k=1}^{n} k = \frac{n(n+1)}{2}=\frac{n^2+n}{2}
 $$
 
-### Fachdidaktische Perspektive
+Natürlich ist es möglich, die Gausssche Summenformel direkt als
 
-Im Mathematikunterricht wird die Gausssche Summenformel oft dazu
-verwendet, den Beweis durch vollständige Induktion zu üben.
-Induktionsbeweise haben eine grosse Ähnlichkeit zu
-Rekursion[@leeDataStructuresAlgorithms2024, p. 74]. Diese Ähnlichkeit
-kann einem dazu verleiten, eine rekursive Implementation für besonders
-Effizient zu halten.
+```{Python}
+def gauss_direkt(n):
+    return (n ** 2 + n) / 2
+```
+
+zu implementieren.  
+
+Allerdings wird im Mathematikunterricht die Gausssche Summenformel
+gelegentlich dazu verwendet, den Beweis durch vollständige Induktion zu
+üben. Daraus ergibt sich aus *fachdidaktischer Perspektive* das Problem,
+dass die vollständige Induktion der Rekursion ähnlich 
+sieht[@leeDataStructuresAlgorithms2024, p. 74]. Daraus ergibt sich dann
+die Fehlvorstellung, dass eine rekursive Implementation der Gaussschen
+Summenformel eine gegenüber der direkten Implementation überlegene
+Lösung sei.
+
 
 ### Fachliche Perspektive
 
@@ -63,9 +74,9 @@ aus[@indenPythonChallenges1002022, p. 74]:
 $$
 \sum_{k=1}^{n}k=
 \left\{
-    \begin{array}{ll}
-        1,&n=1\\
-        n+\sum_{k=1}^{n-1}k,&\forall n > 1
+    \begin{array}{lll}
+        1,&n=1&\text{base case}\\
+        n+\sum_{k=1}^{n-1}k,&\forall n > 1&\text{recursive case}
     \end{array}
 \right.
 $$
