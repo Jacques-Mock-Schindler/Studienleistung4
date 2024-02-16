@@ -17,6 +17,7 @@ lang: de-CH
 # Angaben zur Bibliographie
 bibliography: ../data/Studienleistung4.bib       # Aus Zotero exportiertes Datenbankfile
 csl: ../data/chicago-fullnote-bibliography-short-title-subsequent.csl       # Darstellung der bibliographischen Angaben
+# pandoc-Befehl: pandoc --citeproc -s --from Markdown --to pdf -o xxx.pdf input.md
 ---
 
 # Ausgangslage
