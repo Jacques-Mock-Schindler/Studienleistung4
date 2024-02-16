@@ -3,7 +3,7 @@
 title: Studienleistung zur Rekursion
 subtitle: Fachdidaktik 2 GymInf FS24
 author: Jacques Mock Schindler
-date: 15. Februar 2024
+date: 16. Februar 2024
 institute: Universität Fribourg
 # Einstellungen für die Erstellung eines PDF
 header-includes:
@@ -47,7 +47,7 @@ $$
 
 Natürlich ist es möglich, die Gausssche Summenformel direkt als
 
-```{Python}
+```Python
 def gauss_direkt(n):
     return (n ** 2 + n) / 2
 ```
@@ -65,7 +65,7 @@ Lösung sei.
 
 Unter *fachlichen Gesichtspunkten* ist die Implementierung der
 Gaussschen Summenformel, zumindest dann wenn die entsprechende
-Definition vorliegt[@indenPythonChallenges1002022, p. 74], recht
+Definition vorliegt[@indenPythonChallenges1002022, p. 74; @leeDataStructuresAlgorithms2024, pp. 75], recht
 einfach.
 
 $$
@@ -73,7 +73,7 @@ $$
 \left\{
     \begin{array}{lll}
         1,&n=1&\text{Basisfall}\\
-        n+\sum_{k=1}^{n-1}k,&\forall n > 1&\text{Rekursionsfall}
+        n+\sum\limits_{k=1}^{n-1}k,&\forall n > 1&\text{Rekursionsfall}
     \end{array}
 \right.
 $$
@@ -93,3 +93,6 @@ aus zwei Teilaufgaben. In der Teilaufgabe a) soll die Gausssche
 Summenformel rekursiv und in Teilaufgabe b) direkt implementiert werden.  
 In beiden Teilaufgaben soll der *call stack* durch den Aufruf
 entsprechender print() Funktionen sichtbar gemacht werden.
+
+## Literatur
+
