@@ -81,27 +81,15 @@ $$
 Allerdings darf darob nicht vergessen werden, dass rekursive Lösungen
 bezüglich des erforderlichen Speicherplatzes "teuer" sind.
 
+Man läuft bei rekursiv implementierten Funktionen damit Gefahr, den für
+die entsprechende Lösung erforderlichen Speicherplatz zu unterschätzten.
+
 
 ## Aufgabe
 
-Implementieren Sie die Gausssche Summenformel einmal nach ihrer Formel
-
-$$
-\sum_{k=1}^{n} k = \frac{n(n+1)}{2}
-$$
-
-und einmal nach ihrer rekursiven Definition
-
-$$
-\sum_{k=1}^{n}k=
-\left\{
-    \begin{array}{ll}
-        1,&n=1\\
-        n+\sum_{k=1}^{n-1}k,&\forall n > 1
-    \end{array}
-\right.
-$$
-
-Zeigen Sie dabei mit `print()` Statements an geeigneter Stelle, weshalb
-die rekursive Lösung mehr Speicherplatz braucht als die Implementation
-der direkten Berechnung.
+Mit der folgenden Aufgabenstellung soll das Bewusstsein für diese
+Fehlvorstellung geschärft werden. Aus diesem Grund besteht die Aufgabe
+aus zwei Teilaufgaben. In der Teilaufgabe a) soll die Gausssche
+Summenformel rekursiv und in Teilaufgabe b) direkt implementiert werden.  
+In beiden Teilaufgaben soll der *call stack* durch den Aufruf
+entsprechender print() Funktionen sichtbar gemacht werden.
