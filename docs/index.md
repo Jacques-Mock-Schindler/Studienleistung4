@@ -65,8 +65,9 @@ Lösung sei.
 
 Unter *fachlichen Gesichtspunkten* ist die Implementierung der
 Gaussschen Summenformel, zumindest dann wenn die entsprechende
-Definition vorliegt[@indenPythonChallenges1002022, p. 74; @leeDataStructuresAlgorithms2024, pp. 75], recht
-einfach.
+Definition vorliegt[@indenPythonChallenges1002022, p. 74;
+@leeDataStructuresAlgorithms2024, pp. 75], 
+recht einfach.
 
 $$
 \sum_{k=1}^{n}k=
@@ -79,7 +80,12 @@ $$
 $$
 
 Allerdings darf darob nicht vergessen werden, dass rekursive Lösungen
-bezüglich des erforderlichen Speicherplatzes "teuer" sind.
+bezüglich des erforderlichen Speicherplatzes "teuer" sind. Dies gilt
+auch dann, wenn wie hier die Beanspruchung des call stack "nur"
+proportional zur Rekursionstiefe (dh. zu $n$) wächst. Der "Preis" wird
+umso deutlicher, wenn der Speicherbedarf demjenigen der direkten
+Implementation gegenübergestellt wird. In der direkten Implementation
+ist der Speicherbedarf konstant.
 
 Man läuft bei rekursiv implementierten Funktionen damit Gefahr, den für
 die entsprechende Lösung erforderlichen Speicherplatz zu unterschätzten.
