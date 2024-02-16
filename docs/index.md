@@ -113,6 +113,7 @@ Musterlösung wird hier noch in Textform zur Verfügung gestellt.
    def gaus_rec(n : int) -> int:
        if n == 1:    # Basisfall
            return 1 
+
        else:         # Rekursionsfall
            return n + gaus_rec(n - 1) 
    ```
@@ -126,10 +127,39 @@ Musterlösung wird hier noch in Textform zur Verfügung gestellt.
            print(f'Der aktuelle Wert von n ist {n}.', end=' ')
            print('Basisfall erreicht!')           
            return 1 
-           
+
        else:         # Rekursionsfall
            return n + gaus_rec(n - 1) 
    ```
+
+3. Im letzten Schritt werden die print() Funktionen im Rekursionsfall
+   eingefügt. Dies ist etwas schwieriger, weil es solche vor dem
+   Eintreten in eine neue Rekursionsebene und solche nach derem
+   Verlassen braucht. Dazu muss das Resultat des Rekursionsfall einer
+   eigenen Variablen zugewiesen werden, die dann ihrerseits
+   zurückgegeben werden kann. Dies ermöglicht es, die print() Funktionen
+   vor und nach dem Rekursionsaufruf zu platzieren.
+
+   ```Python
+   def gaus_rec(n : int) -> int:
+       if n == 1:    # Basisfall
+           print(f'Der aktuelle Wert von n ist {n}.', end=' ')
+           print('Basisfall erreicht!') 
+           return 1 
+
+       else:         # Rekursionsfall
+           # Ausgaben vor dem Rekursionsaufruf
+           print(f'Es sind noch {n} Rekursionen nötig,', end=' ')
+           print('dies entspricht dem aktuellen Wert von n', end=' ')
+           print('(der call stack ist noch im Aufbau).')
+           # Zuweisung des Resultates des Rekursionsaufrufs an eine eigene Variable
+           resultat = n + gauss_rec(n-1)
+           # Ausgaben nach dem Rerusionsaufruf
+           print(f'Der aktuelle Wert von n ist {n}', end='')
+           print(f' und das Zwischenergebnis {resultat}', end=' ')
+           print('(der call stack wird abgegebaut).')
+           return resultat
+    ```
 
 ## Literatur
 
