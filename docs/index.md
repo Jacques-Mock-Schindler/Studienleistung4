@@ -152,7 +152,8 @@ Musterlösung wird hier noch in Textform zur Verfügung gestellt.
            print(f'Es sind noch {n} Rekursionen nötig,', end=' ')
            print('dies entspricht dem aktuellen Wert von n', end=' ')
            print('(der call stack ist noch im Aufbau).')
-           # Zuweisung des Resultates des Rekursionsaufrufs an eine eigene Variable
+           # Zuweisung des Resultates des Rekursionsaufrufs 
+           # an eine eigene Variable
            resultat = n + gauss_rec(n-1)
            # Ausgaben nach dem Rerusionsaufruf
            print(f'Der aktuelle Wert von n ist {n}', end='')
