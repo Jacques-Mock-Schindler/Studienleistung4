@@ -40,7 +40,7 @@ aufzudecken und richtig zu stellen.
 Eine wesentliche Fehlvorstellung bezieht sich auf den Speicherbedarf von
 rekursiv implementierten Lösungen. Dies soll anhand der Gaussschen
 Summenformel (kleiner Gauss) illustriert werden. Die Gausssche
-Summenformel dient zur addition der ersten n aufeinanderfolgenden
+Summenformel dient zur addition der ersten $n$ aufeinanderfolgenden
 natürlichen Zahlen: 
 
 $$
@@ -58,12 +58,13 @@ zu implementieren.
 
 Allerdings wird im Mathematikunterricht die Gausssche Summenformel
 gelegentlich dazu verwendet, den Beweis durch vollständige Induktion zu
-üben. Daraus ergibt sich aus *fachdidaktischer Perspektive* das Problem,
-dass die vollständige Induktion der Rekursion ähnlich 
-sieht[@leeDataStructuresAlgorithms2024, p. 74]. Daraus ergibt sich dann
-die Fehlvorstellung, dass eine rekursive Implementation der Gaussschen
-Summenformel eine gegenüber der direkten Implementation überlegene
-Lösung sei.
+üben.  
+Lee und Hubbard weisen in ihrem Lehrbuch zu recht auf die Ähnlichkeiten
+der vollständigen Induktion und der Rekursion
+hin[@leeDataStructuresAlgorithms2024, p. 74]. Daraus ergibt sich aus
+*fachdidaktischer Perspektive* das Problem, dass eine rekursive
+Implementation der Gaussschen Summenformel für eine gegenüber der
+direkten Implementation überlegene Lösung gehalten wird.
 
 Unter *fachlichen Gesichtspunkten* ist die Implementierung der
 Gaussschen Summenformel, zumindest dann wenn die entsprechende
