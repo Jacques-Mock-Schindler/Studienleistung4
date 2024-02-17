@@ -98,19 +98,21 @@ die entsprechende Lösung erforderlichen Speicherplatz zu unterschätzten.
 ## Aufgabe
 
 Mit der folgenden Aufgabenstellung soll das Bewusstsein für diese
-Fehlvorstellung geschärft werden. Aus diesem Grund besteht die Aufgabe
+Fehlvorstellung geschärft werden. Die Aufgabe besteht
 aus zwei Teilaufgaben. In der Teilaufgabe a) soll die Gausssche
 Summenformel rekursiv und in Teilaufgabe b) direkt implementiert werden.  
 In beiden Teilaufgaben soll der *call stack* durch den Aufruf
 entsprechender print() Funktionen sichtbar gemacht werden.
 
-Die Aufgabenstellung wird als Jupyter Notebook abgegeben. Das gleiche
-gilt für eine ausführbare Musterlösung. Der ausführliche Kommentar zur
-Musterlösung wird hier noch in Textform zur Verfügung gestellt.
+Die Aufgabenstellung wird als Jupyter Notebook abgegeben. Die
+Musterlösung wird auftragsgemäss als ausführbare .py Datei eingereicht.
+Der ausführliche Kommentar zur Musterlösung wird hier noch in Textform
+zur Verfügung gestellt. 
 
 1. Die rekursive Variante der Gaussschen Summenformel wird in
    einem ersten Schritt noch ohne die verlangten print() Funktionen
-   implementiert.  
+   implementiert. Sie bildet exakt die rekursive Definition der
+   Gaussschen Summenformel ab.
 
    ```Python
    def gauss_rec(n : int) -> int:
@@ -122,13 +124,18 @@ Musterlösung wird hier noch in Textform zur Verfügung gestellt.
    ```
 
 2. In einem zweiten Schritt werden die print() Funktionen im Basisfall
-   eingefügt. 
+   eingefügt. Aus typographischen Gründen wird der Aufruf der print()
+   Funktion auf mehrere Zeilen verteilt. Aus Gründen der Lesbarkeit wird
+   auch der zweite Satz als f-string formatiert, auch wenn dies nicht
+   nötig wäre.
 
    ```Python
    def gauss_rec(n : int) -> int:
        if n == 1:    # Basisfall
-           print(f'Der aktuelle Wert von n ist {n}.', end=' ')
-           print('Basisfall erreicht!')           
+           print(
+            f'Der aktuelle Wert von n ist {n}. '
+            f'Basisfall erreicht!'
+            )           
            return 1 
 
        else:         # Rekursionsfall
@@ -137,31 +144,38 @@ Musterlösung wird hier noch in Textform zur Verfügung gestellt.
 
 3. Im letzten Schritt werden die print() Funktionen im Rekursionsfall
    eingefügt. Dies ist etwas schwieriger, weil es solche vor dem
-   Eintreten in eine neue Rekursionsebene und solche nach derem
+   Eintreten in eine neue Rekursionsebene und solche nach deren
    Verlassen braucht. Dazu muss das Resultat des Rekursionsfall einer
-   eigenen Variablen zugewiesen werden, die dann ihrerseits
-   zurückgegeben werden kann. Dies ermöglicht es, die print() Funktionen
-   vor und nach dem Rekursionsaufruf zu platzieren.
+   eigenen Variablen zugewiesen werden. Die Variable kann dann
+   ihrerseits nach dem Aufruf der print() Funktion mit dem return
+   Statement zurückgegeben werden. So ist es möglich, die print()
+   Funktionen vor und nach dem Rekursionsaufruf zu platzieren.
 
    ```Python
    def gauss_rec(n : int) -> int:
        if n == 1:    # Basisfall
-           print(f'Der aktuelle Wert von n ist {n}.', end=' ')
-           print('Basisfall erreicht!') 
+           print(
+                f'Der aktuelle Wert von n ist {n}. '
+                f'Basisfall erreicht!'
+                )
            return 1 
 
        else:         # Rekursionsfall
            # Ausgaben vor dem Rekursionsaufruf
-           print(f'Es sind noch {n} Rekursionen nötig,', end=' ')
-           print('dies entspricht dem aktuellen Wert von n', end=' ')
-           print('(der call stack ist noch im Aufbau).')
+           print(
+            f'Es sind noch {n} Rekursionen nötig, '
+            f'dies entspricht dem aktuellen Wert von n '
+            f'(der call stack ist noch im Aufbau).'
+            )
            # Zuweisung des Resultates des Rekursionsaufrufs 
            # an eine eigene Variable
            resultat = n + gauss_rec(n-1)
            # Ausgaben nach dem Rerusionsaufruf
-           print(f'Der aktuelle Wert von n ist {n}', end='')
-           print(f' und das Zwischenergebnis {resultat}', end=' ')
-           print('(der call stack wird abgegebaut).')
+           print(
+            f'Der aktuelle Wert von n ist {n} '
+            f'und das Zwischenergebnis {resultat} '
+            f'(der call stack wird abgegebaut).'
+            )
            return resultat
     ```
 
