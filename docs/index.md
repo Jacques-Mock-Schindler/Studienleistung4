@@ -40,7 +40,7 @@ aufzudecken und richtig zu stellen.
 Eine wesentliche Fehlvorstellung bezieht sich auf den Speicherbedarf von
 rekursiv implementierten Lösungen. Dies soll anhand der Gaussschen
 Summenformel (kleiner Gauss) illustriert werden. Die Gausssche
-Summenformel dient zur addition der ersten $n$ aufeinanderfolgenden
+Summenformel dient zur Addition der ersten $n$ aufeinanderfolgenden
 natürlichen Zahlen: 
 
 $$
@@ -62,15 +62,16 @@ gelegentlich dazu verwendet, den Beweis durch vollständige Induktion zu
 Lee und Hubbard weisen in ihrem Lehrbuch zu recht auf die Ähnlichkeiten
 der vollständigen Induktion und der Rekursion
 hin[@leeDataStructuresAlgorithms2024, p. 74]. Daraus ergibt sich aus
-*fachdidaktischer Perspektive* das Problem, dass eine rekursive
-Implementation der Gaussschen Summenformel für eine gegenüber der
-direkten Implementation überlegene Lösung gehalten wird.
+*fachdidaktischer Perspektive* das Problem, dass die Schüler und
+Schülerinnen eine rekursive Implementation der Gaussschen Summenformel
+für eine gegenüber der direkten Implementation überlegene Lösung halten
+können.
 
 Unter *fachlichen Gesichtspunkten* ist die Implementierung der
 Gaussschen Summenformel, zumindest dann wenn die entsprechende
-Definition vorliegt[@indenPythonChallenges1002022, p. 74;
-@leeDataStructuresAlgorithms2024, pp. 75], 
-recht einfach.
+Definition wie unten als Formel vorliegt[@indenPythonChallenges1002022,
+p. 74; @leeDataStructuresAlgorithms2024, pp. 75], 
+verhältnismässig einfach.
 
 $$
 \sum_{k=1}^{n}k=
@@ -83,12 +84,12 @@ $$
 $$
 
 Allerdings darf darob nicht vergessen werden, dass rekursive Lösungen
-bezüglich des erforderlichen Speicherplatzes "teuer" sind. Dies gilt
-auch dann, wenn wie hier die Beanspruchung des call stack "nur"
-proportional zur Rekursionstiefe (dh. zu $n$) wächst. Der "Preis" wird
-umso deutlicher, wenn der Speicherbedarf demjenigen der direkten
-Implementation gegenübergestellt wird. In der direkten Implementation
-ist der Speicherbedarf konstant.
+bezüglich des erforderlichen Speicherplatzes und Rechenaufwandes "teuer"
+sind. Dies gilt auch dann, wenn wie hier die Beanspruchung des call
+stack "nur" proportional zur Rekursionstiefe (dh. zu $n$) wächst. Der
+"Preis" wird umso deutlicher, wenn der Speicherbedarf demjenigen der
+direkten Implementation gegenübergestellt wird. In der direkten
+Implementation ist der Speicherbedarf und Rechenaufwand konstant.
 
 Man läuft bei rekursiv implementierten Funktionen damit Gefahr, den für
 die entsprechende Lösung erforderlichen Speicherplatz zu unterschätzten.
