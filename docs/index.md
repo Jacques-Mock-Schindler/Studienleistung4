@@ -215,7 +215,7 @@ Der aktuelle Wert von n ist 3.
 6
 ```
 
-Dies zeigt den grösseren Speicherbedarf der rekursiven Implementation
+Dies zeigt den grösseren Speicher- und Rechenbedarf der rekursiven Implementation
 deutlich. 
 
 
