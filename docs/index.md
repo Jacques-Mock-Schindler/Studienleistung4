@@ -63,9 +63,9 @@ Lee und Hubbard weisen in ihrem Lehrbuch zu recht auf die Ähnlichkeiten
 der vollständigen Induktion und der Rekursion
 hin[@leeDataStructuresAlgorithms2024, p. 74]. Daraus ergibt sich aus
 *fachdidaktischer Perspektive* das Problem, dass die Schüler und
-Schülerinnen eine rekursive Implementation der Gaussschen Summenformel
-für eine gegenüber der direkten Implementation überlegene Lösung halten
-können.
+Schülerinnen (SuS) eine rekursive Implementation der Gaussschen
+Summenformel für eine gegenüber der direkten Implementation überlegene
+Lösung halten können.
 
 Unter *fachlichen Gesichtspunkten* ist die Implementierung der
 Gaussschen Summenformel, zumindest dann wenn die entsprechende
@@ -107,7 +107,8 @@ entsprechender print() Funktionen sichtbar gemacht werden.
 Die Aufgabenstellung wird als Jupyter Notebook abgegeben. Die
 Musterlösung wird auftragsgemäss als ausführbare .py Datei eingereicht.
 Der ausführliche Kommentar zur Musterlösung wird hier noch in Textform
-zur Verfügung gestellt. 
+zur Verfügung gestellt. Die Kommentare im Code richten sich an die SuS
+und entsprechen nicht den Vorgaben von PEP 8.
 
 1. Die rekursive Variante der Gaussschen Summenformel wird in
    einem ersten Schritt noch ohne die verlangten print() Funktionen
@@ -120,7 +121,7 @@ zur Verfügung gestellt.
            return 1 
 
        else:         # Rekursionsfall
-           return n + gaus_rec(n - 1) 
+           return n + gauss_rec(n - 1) 
    ```
 
 2. In einem zweiten Schritt werden die print() Funktionen im Basisfall
@@ -139,7 +140,7 @@ zur Verfügung gestellt.
            return 1 
 
        else:         # Rekursionsfall
-           return n + gaus_rec(n - 1) 
+           return n + gauss_rec(n - 1) 
    ```
 
 3. Im letzten Schritt werden die print() Funktionen im Rekursionsfall
@@ -167,10 +168,9 @@ zur Verfügung gestellt.
             f'dies entspricht dem aktuellen Wert von n '
             f'(der call stack ist noch im Aufbau).'
             )
-           # Zuweisung des Resultates des Rekursionsaufrufs 
-           # an eine eigene Variable
+           # Rekursionsaufruf
            resultat = n + gauss_rec(n-1)
-           # Ausgaben nach dem Rerusionsaufruf
+           # Ausgaben nach dem Rekursionsaufruf
            print(
             f'Der aktuelle Wert von n ist {n} '
             f'und das Zwischenergebnis {resultat} '
