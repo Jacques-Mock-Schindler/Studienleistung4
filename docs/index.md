@@ -11,7 +11,7 @@ header-includes:
 output:
   pdf_document:
     latex_engine: xelatex
-fontsize: 12pt
+fontsize: 11pt
 papersize: a4
 lang: de-CH
 # Angaben zur Bibliographie
@@ -110,6 +110,8 @@ Der ausführliche Kommentar zur Musterlösung wird hier noch in Textform
 zur Verfügung gestellt. Die Kommentare im Code richten sich an die SuS
 und entsprechen nicht den Vorgaben von PEP 8.
 
+### Kommentar zur rekursiven Implementation
+
 1. Die rekursive Variante der Gaussschen Summenformel wird in
    einem ersten Schritt noch ohne die verlangten print() Funktionen
    implementiert. Sie bildet exakt die rekursive Definition der
@@ -194,6 +196,8 @@ Der aktuelle Wert von n ist 3 und das Zwischenergebnis 6
 (der call stack wird abgegebaut).
 6
 ```
+
+### Kommentar zur direkten Implementation
 
 Dem steht die direkte Implementation gegenüber. Auch in der direkten
 Implementation wurde eine print() Funktion eingebaut.
