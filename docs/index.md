@@ -29,11 +29,11 @@ Strukturen mit unvorhersehbaren Formen und Tiefen zu
 iterieren[@lutzLearningPython2013, p. 555]. Daher ist die Rekursion eine
 nützliche Technik, die man kennen muss.
 
-Weil rekursiv implementierte Funktionen in der Praxis nicht so häufig
-sind, und trotzdem für wesentliche Aufgaben ein nützliches Hilfsmittel
-darstellen, lohnt es sich, Fehlvorstellungen im Zusammenhang
-mit der rekursiven Implementierung von Funktionen aufzudecken und
-richtig zu stellen.  
+Weil rekursiv implementierte Funktionen eine fortgeschrittenere Lösung
+für Probleme darstellen, und vor allem für anspruchsvollere Aufgaben ein
+nützliches Hilfsmittel darstellen, lohnt es sich, Fehlvorstellungen im
+Zusammenhang mit der rekursiven Implementierung von Funktionen
+aufzudecken und richtig zu stellen.  
 
 ## Die Gausssche Summenformel als Anwendungsfall für die Entstehung von Fehlvorstellungen
 
