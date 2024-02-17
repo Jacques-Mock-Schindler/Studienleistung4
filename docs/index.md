@@ -165,7 +165,7 @@ und entsprechen nicht den Vorgaben von PEP 8.
            # Ausgaben vor dem Rekursionsaufruf
            print(
             f'Es sind noch {n} Rekursionen nötig, '
-            f'dies entspricht dem aktuellen Wert von n '
+            f'dies entspricht dem \n aktuellen Wert von n '
             f'(der call stack ist noch im Aufbau).'
             )
            # Rekursionsaufruf
@@ -173,11 +173,47 @@ und entsprechen nicht den Vorgaben von PEP 8.
            # Ausgaben nach dem Rekursionsaufruf
            print(
             f'Der aktuelle Wert von n ist {n} '
-            f'und das Zwischenergebnis {resultat} '
+            f'und das Zwischenergebnis {resultat} \n'
             f'(der call stack wird abgegebaut).'
             )
            return resultat
     ```
+
+Die solcherart mit print() Funktionen ergänzte Implementation führt bei
+einem Aufruf `print(gauss_rec(3))` zu folgender Ausgabe:
+
+```bash
+Es sind noch 3 Rekursionen nötig, dies entspricht dem 
+ aktuellen Wert von n (der call stack ist noch im Aufbau).
+Es sind noch 2 Rekursionen nötig, dies entspricht dem 
+ aktuellen Wert von n (der call stack ist noch im Aufbau).
+Der aktuelle Wert von n ist 1. Basisfall erreicht!
+Der aktuelle Wert von n ist 2 und das Zwischenergebnis 3 
+(der call stack wird abgegebaut).
+Der aktuelle Wert von n ist 3 und das Zwischenergebnis 6 
+(der call stack wird abgegebaut).
+6
+```
+
+Dem steht die direkte Implementation gegenüber. Auch in der direkten
+Implementation wurde eine print() Funktion eingebaut.
+
+```Python
+def gauss_direct(n : int) -> int:
+    print(f'Der aktuelle Wert von n ist {n}.')
+    return int((n * (n + 1)) / 2)
+```
+
+Der Aufruf von `print(gauss_direct(3))` führt zu folgender Ausgabe:
+
+```bash
+Der aktuelle Wert von n ist 3.
+6
+```
+
+Dies zeigt den grösseren Speicherbedarf der rekursiven Implementation
+deutlich. 
+
 
 ## Literatur
 
