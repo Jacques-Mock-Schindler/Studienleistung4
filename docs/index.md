@@ -3,7 +3,7 @@
 title: Studienleistung zur Rekursion
 subtitle: Fachdidaktik 2 GymInf FS24
 author: Jacques Mock Schindler
-date: 16. Februar 2024
+date: 17. Februar 2024
 institute: Universität Fribourg
 # Einstellungen für die Erstellung eines PDF
 header-includes:
