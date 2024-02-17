@@ -37,9 +37,11 @@ aufzudecken und richtig zu stellen.
 
 ## Die Gausssche Summenformel als Anwendungsfall für die Entstehung von Fehlvorstellungen
 
-Eine wesentliche Fehlvorstellung soll anhand der Gaussschen Summenformel
-(kleiner Gauss) illustriert werden. Die Gausssche Summenformel dient zur
-addition der ersten n aufeinanderfolgenden natürlichen Zahlen:
+Eine wesentliche Fehlvorstellung bezieht sich auf den Speicherbedarf von
+rekursiv implementierten Lösungen. Dies soll anhand der Gaussschen
+Summenformel (kleiner Gauss) illustriert werden. Die Gausssche
+Summenformel dient zur addition der ersten n aufeinanderfolgenden
+natürlichen Zahlen: 
 
 $$
 1+2+3+4+\dots+n = \sum_{k=1}^{n} k = \frac{n(n+1)}{2}=\frac{n^2+n}{2}
