@@ -23,12 +23,11 @@ csl: ../data/chicago-fullnote-bibliography-short-title-subsequent.csl       # Da
 # Ausgangslage
 
 Rekursion ist eine fortgeschrittene Programmiertechnik. Weil Python 
-verhältnismässig einfache Schleifenkonstruktionen zur Verfügung stellt,
-sind Implementationen unter Verwendung von Rekursionen in
-Python relativ selten.  
-Trotzdem ist die Rekursion eine nützliche Technik, die man kennen sollte
-\- nicht zu Letzt, um über Strukturen mit unvorhersehbaren Formen und
-Tiefen zu iterieren[@lutzLearningPython2013, p. 555].
+mächtige und flexible Schleifenkonstruktionen zur Verfügung stellt,
+werden in Python rekursive Lösungen vor allem verwendet, um über
+Strukturen mit unvorhersehbaren Formen und Tiefen zu
+iterieren[@lutzLearningPython2013, p. 555]. Daher ist die Rekursion eine
+nützliche Technik, die man kennen muss.
 
 Weil rekursiv implementierte Funktionen in der Praxis nicht so häufig
 sind, und trotzdem für wesentliche Aufgaben ein nützliches Hilfsmittel
