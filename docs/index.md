@@ -104,8 +104,12 @@ Summenformel rekursiv und in Teilaufgabe b) direkt implementiert werden.
 In beiden Teilaufgaben soll der *call stack* durch den Aufruf
 entsprechender print() Funktionen sichtbar gemacht werden.
 
-Die Aufgabenstellung wird als Jupyter Notebook abgegeben. Die
-Musterlösung wird auftragsgemäss als ausführbare .py Datei eingereicht.
+Die Aufgabenstellung wird als 
+Jupyter Notebook
+abgegeben. Die
+Musterlösung wird auftragsgemäss als 
+[ausführbare .py Datei](../src/rekursion_muloe.py) 
+eingereicht.
 Der ausführliche Kommentar zur Musterlösung wird hier noch in Textform
 zur Verfügung gestellt. Die Kommentare im Code richten sich an die SuS
 und entsprechen nicht den Vorgaben von PEP 8.
