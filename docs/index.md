@@ -108,7 +108,7 @@ Die Aufgabenstellung wird als
 [Jupyter Notebook](https://colab.research.google.com/github/Jacques-Mock-Schindler/Studienleistung4/blob/main/src/rekursion_sus.ipynb)
 abgegeben. Die
 Musterlösung wird auftragsgemäss als 
-[ausführbare .py Datei](../src/rekursion_muloe.py) 
+[ausführbare .py Datei](https://github.com/Jacques-Mock-Schindler/Studienleistung4/blob/main/src/rekursion_muloe.py)
 eingereicht.
 Der ausführliche Kommentar zur Musterlösung wird hier noch in Textform
 zur Verfügung gestellt. Die Kommentare im Code richten sich an die SuS
