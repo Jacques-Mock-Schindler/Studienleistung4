@@ -36,7 +36,7 @@ def gauss_rec(n : int) -> int:
         print(
             f'Der aktuelle Wert von n ist {n} '
             f'und das Zwischenergebnis {resultat} \n'
-            f'(der call stack wird abgegebaut).'
+            f'(der call stack wird abgebaut).'
             )
 
         return resultat
@@ -60,9 +60,9 @@ def gauss_direct(n : int) -> int:
 def main():
     n = 5
     print(f'Die Summe der ersten {n} natürlichen Zahlen beträgt')
-    print('-------------Rekursive Funktion----------------')
+    print(' ')
     print(f'über die rekursive Funktion: {gauss_rec(n)}')
-    print('-------------Direkte Funktion------------------')
+    print(' ')
     print(f'über die direkte Funktion: {gauss_direct(n)}')
     
 if __name__ == '__main__':
