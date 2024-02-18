@@ -105,7 +105,7 @@ In beiden Teilaufgaben soll der *call stack* durch den Aufruf
 entsprechender print() Funktionen sichtbar gemacht werden.
 
 Die Aufgabenstellung wird als 
-Jupyter Notebook
+[Jupyter Notebook](https://colab.research.google.com/github/Jacques-Mock-Schindler/Studienleistung4/blob/main/src/rekursion_sus.ipynb)
 abgegeben. Die
 Musterlösung wird auftragsgemäss als 
 [ausführbare .py Datei](../src/rekursion_muloe.py) 
