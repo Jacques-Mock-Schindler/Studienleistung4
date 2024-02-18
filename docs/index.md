@@ -31,7 +31,7 @@ nützliche Technik, die man kennen muss.
 
 Weil rekursiv implementierte Funktionen eine fortgeschrittenere Lösung
 für Probleme darstellen, und vor allem für anspruchsvollere Aufgaben ein
-nützliches Hilfsmittel darstellen, lohnt es sich, Fehlvorstellungen im
+nützliches Hilfsmittel sind, lohnt es sich, Fehlvorstellungen im
 Zusammenhang mit der rekursiven Implementierung von Funktionen
 aufzudecken und richtig zu stellen.  
 
@@ -59,13 +59,13 @@ zu implementieren.
 Allerdings wird im Mathematikunterricht die Gausssche Summenformel
 gelegentlich dazu verwendet, den Beweis durch vollständige Induktion zu
 üben.  
-Lee und Hubbard weisen in ihrem Lehrbuch zu recht auf die Ähnlichkeiten
+Lee und Hubbard weisen in ihrem Lehrbuch zu Recht auf die Ähnlichkeiten
 der vollständigen Induktion und der Rekursion
 hin[@leeDataStructuresAlgorithms2024, p. 74]. Daraus ergibt sich aus
 *fachdidaktischer Perspektive* das Problem, dass die Schüler und
 Schülerinnen (SuS) eine rekursive Implementation der Gaussschen
 Summenformel für eine gegenüber der direkten Implementation überlegene
-Lösung halten können.
+Lösung halten könnten.
 
 Unter *fachlichen Gesichtspunkten* ist die Implementierung der
 Gaussschen Summenformel, zumindest dann wenn die entsprechende
@@ -148,7 +148,7 @@ und entsprechen nicht den Vorgaben von PEP 8.
 3. Im letzten Schritt werden die print() Funktionen im Rekursionsfall
    eingefügt. Dies ist etwas schwieriger, weil es solche vor dem
    Eintreten in eine neue Rekursionsebene und solche nach deren
-   Verlassen braucht. Dazu muss das Resultat des Rekursionsfall einer
+   Verlassen braucht. Dazu muss das Resultat des Rekursionsfalls einer
    eigenen Variablen zugewiesen werden. Die Variable kann dann
    ihrerseits nach dem Aufruf der print() Funktion mit dem return
    Statement zurückgegeben werden. So ist es möglich, die print()
@@ -176,7 +176,7 @@ und entsprechen nicht den Vorgaben von PEP 8.
            print(
             f'Der aktuelle Wert von n ist {n} '
             f'und das Zwischenergebnis {resultat} \n'
-            f'(der call stack wird abgegebaut).'
+            f'(der call stack wird abgebaut).'
             )
            return resultat
     ```
@@ -191,9 +191,9 @@ Es sind noch 2 Rekursionen nötig, dies entspricht dem
  aktuellen Wert von n (der call stack ist noch im Aufbau).
 Der aktuelle Wert von n ist 1. Basisfall erreicht!
 Der aktuelle Wert von n ist 2 und das Zwischenergebnis 3 
-(der call stack wird abgegebaut).
+(der call stack wird abgebaut).
 Der aktuelle Wert von n ist 3 und das Zwischenergebnis 6 
-(der call stack wird abgegebaut).
+(der call stack wird abgebaut).
 6
 ```
 
