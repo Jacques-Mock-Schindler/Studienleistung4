@@ -1,0 +1,9 @@
+theme: jekyll-theme-slate
+
+title: Studienleistung 4 in der Fachdidaktik 2
+description: ' ' 
+
+includes_dir     : ./_includes
+layouts_dir:  ./_layouts
+plugins:
+  - jemoji
