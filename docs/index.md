@@ -61,7 +61,7 @@ gelegentlich dazu verwendet, den Beweis durch vollständige Induktion zu
 üben.  
 Lee und Hubbard weisen in ihrem Lehrbuch zu Recht auf die Ähnlichkeiten
 der vollständigen Induktion und der Rekursion
-hin[@leeDataStructuresAlgorithms2024, p. 74]. Daraus ergibt sich aus
+hin[^2]. Daraus ergibt sich aus
 *fachdidaktischer Perspektive* das Problem, dass die Schüler und
 Schülerinnen (SuS) eine rekursive Implementation der Gaussschen
 Summenformel für eine gegenüber der direkten Implementation überlegene
@@ -69,8 +69,7 @@ Lösung halten könnten.
 
 Unter *fachlichen Gesichtspunkten* ist die Implementierung der
 Gaussschen Summenformel, zumindest dann wenn die entsprechende
-Definition wie unten als Formel vorliegt[@indenPythonChallenges1002022,
-p. 74; @leeDataStructuresAlgorithms2024, pp. 75], 
+Definition wie unten als Formel vorliegt[^3], 
 verhältnismässig einfach.
 
 $$
@@ -227,3 +226,11 @@ deutlich.
 
 [^1]: Lutz, Mark. Learning Python. Fifth edition. Beijing, Cambridge,
     Farnham, Köln, Sebastopol, Tokyo: O’Reilly, 2013. p. 555.
+
+[^2]: Lee, Kent D., und Steve Hubbard. Data Structures and Algorithms
+    with Python: With an Introduction to Multiprocessing. Second
+    edition. Cham: Springer, 2024. p. 74.
+
+[^3]: Inden, Michael. Python Challenges: 100 Proven Programming Tasks
+    Designed to Prepare You for Anything. New York: Apress, 2022. p. 74;
+    Lee und Hubbard (ibd.). pp. 75.
